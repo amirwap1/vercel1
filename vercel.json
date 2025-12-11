@@ -7,19 +7,7 @@
   "outputDirectory": ".next",
   "framework": "nextjs",
   
-  "regions": [
-    "iad1",
-    "sfo1", 
-    "pdx1",
-    "cle1",
-    "gru1",
-    "hnd1",
-    "syd1",
-    "fra1",
-    "cdg1",
-    "bom1",
-    "sin1"
-  ],
+  "regions": ["iad1", "sfo1", "fra1"],
   
   "functions": {
     "app/api/**/*.ts": {
