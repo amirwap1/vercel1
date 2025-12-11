@@ -1,0 +1,83 @@
+{
+  "version": 2,
+  "name": "vercel-edge-json-api",
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
+  
+  "regions": [
+    "iad1",
+    "sfo1", 
+    "pdx1",
+    "cle1",
+    "gru1",
+    "hnd1",
+    "syd1",
+    "fra1",
+    "cdg1",
+    "bom1",
+    "sin1"
+  ],
+  
+  "functions": {
+    "app/api/**/*.ts": {
+      "runtime": "edge",
+      "memory": 1024,
+      "maxDuration": 10,
+      "regions": ["iad1", "sfo1", "fra1", "sin1"]
+    }
+  },
+  
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, s-maxage=30, stale-while-revalidate=59"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "public, s-maxage=60"
+        },
+        {
+          "key": "Vercel-CDN-Cache-Control",
+          "value": "public, s-maxage=3600"
+        }
+      ]
+    }
+  ],
+  
+  "routes": [
+    {
+      "src": "/health",
+      "dest": "/api/health"
+    },
+    {
+      "src": "/status",
+      "dest": "/api/health"
+    }
+  ],
+  
+  "env": {
+    "KV_URL": "@kv-url",
+    "KV_REST_API_URL": "@kv-rest-api-url",
+    "KV_REST_API_TOKEN": "@kv-rest-api-token",
+    "EDGE_CONFIG": "@edge-config"
+  },
+  
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    }
+  },
+  
+  "git": {
+    "deploymentEnabled": {
+      "main": true,
+      "production": true
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "name": "vercel-edge-json-api",
+  "version": "1.0.0",
+  "description": "High-performance JSON API built on Vercel Edge Runtime with global sub-50ms response times",
+  "keywords": [
+    "vercel",
+    "edge-runtime",
+    "json-api",
+    "nextjs",
+    "typescript",
+    "redis",
+    "kv-store",
+    "serverless",
+    "high-performance"
+  ],
+  "homepage": "https://github.com/yourusername/vercel-edge-json-api",
+  "bugs": {
+    "url": "https://github.com/yourusername/vercel-edge-json-api/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/vercel-edge-json-api.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com",
+    "url": "https://your-website.com"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "dev:debug": "NODE_OPTIONS='--inspect' next dev",
+    "dev:turbo": "next dev --turbo",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "type-check": "tsc --noEmit",
+    "test": "npm run type-check && npm run lint",
+    "clean": "rm -rf .next .vercel dist",
+    "deploy": "vercel --prod --yes",
+    "deploy:preview": "vercel",
+    "env:pull": "vercel env pull .env.local",
+    "env:push": "vercel env push .env.local",
+    "logs": "vercel logs",
+    "inspect": "vercel inspect",
+    "analyze": "ANALYZE=true npm run build",
+    "postbuild": "next-bundle-analyzer",
+    "pre-commit": "npm run type-check && npm run lint:fix"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.1.1",
+    "@vercel/edge-config": "^0.4.1",
+    "@vercel/kv": "^1.0.1",
+    "@vercel/speed-insights": "^1.0.8",
+    "next": "^14.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "clsx": "^2.0.0",
+    "lucide-react": "^0.294.0",
+    "tailwind-merge": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.2",
+    "postcss": "^8.4.32",
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.9",
+    "tailwindcss": "^3.3.6",
+    "typescript": "^5.3.3",
+    "@next/bundle-analyzer": "^14.0.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.3%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "printWidth": 80,
+    "plugins": ["prettier-plugin-tailwindcss"]
+  },
+  "eslintConfig": {
+    "extends": [
+      "next/core-web-vitals",
+      "prettier"
+    ],
+    "rules": {
+      "prefer-const": "error",
+      "no-unused-vars": "warn",
+      "@typescript-eslint/no-unused-vars": "warn"
+    }
+  }
+}
