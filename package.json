@@ -1,5 +1,5 @@
 {
-  "name": "vercel-edge-json-api",
+  "name": "vercel1",
   "version": "1.0.0",
   "description": "High-performance JSON API built on Vercel Edge Runtime with global sub-50ms response times",
   "keywords": [
