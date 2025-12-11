@@ -196,7 +196,7 @@ export default function Home() {
           <div className="border-t border-gray-200 pt-8">
             <p className="text-sm">
               Built with ❤️ using <strong>Vercel Edge Runtime</strong> • 
-              <a href="https://github.com/yourusername/vercel-edge-json-api" className="text-blue-600 hover:text-blue-800 ml-1">
+              <a href="https://github.com/amirwap1/vercel1" className="text-blue-600 hover:text-blue-800 ml-1">
                 View on GitHub
               </a>
             </p>

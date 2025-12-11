@@ -29,14 +29,14 @@ A **high-performance JSON API** built on Vercel Edge Runtime with global sub-50m
 
 ### Method 1: One-Click Deploy
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/vercel-edge-json-api)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/amirwap1/vercel1)
 
 ### Method 2: Manual Setup
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/vercel-edge-json-api.git
-cd vercel-edge-json-api
+git clone https://github.com/amirwap1/vercel1.git
+cd vercel1
 
 # Install dependencies
 npm install
@@ -161,7 +161,7 @@ MAX_FILE_SIZE=10485760
 ## 🏗️ Project Structure
 
 ```
-vercel-edge-json-api/
+vercel1/
 ├── app/
 │   ├── api/
 │   │   ├── data/
@@ -399,8 +399,8 @@ MIT License - see [LICENSE](LICENSE) file for details.
 ## 🆘 Support
 
 - **Documentation**: [Full API docs](https://your-api.vercel.app)
-- **Issues**: [GitHub Issues](https://github.com/yourusername/vercel-edge-json-api/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/vercel-edge-json-api/discussions)
+- **Issues**: [GitHub Issues](https://github.com/amirwap1/vercel1/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/amirwap1/vercel1/discussions)
 - **Email**: support@yourproject.com
 
 ## 🎯 Roadmap

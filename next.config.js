@@ -39,7 +39,7 @@ const nextConfig = {
     return [
       {
         source: '/docs',
-        destination: 'https://github.com/yourusername/vercel-edge-json-api#readme',
+        destination: 'https://github.com/amirwap1/vercel1#readme',
         permanent: false,
       },
     ]
