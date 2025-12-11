@@ -25,8 +25,7 @@
     "app/api/**/*.ts": {
       "runtime": "edge",
       "memory": 1024,
-      "maxDuration": 10,
-      "regions": ["iad1", "sfo1", "fra1", "sin1"]
+      "maxDuration": 10
     }
   },
   
